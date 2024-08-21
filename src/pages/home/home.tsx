@@ -32,8 +32,7 @@ function Home() {
                     />
                 </div>
             </div>
-            
-            
+
         </div>
 
         
@@ -42,4 +41,4 @@ function Home() {
 
 export default Home;
 
-/rfce*/
+/*rfce*/
