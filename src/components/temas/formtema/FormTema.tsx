@@ -48,15 +48,15 @@ function FormularioTema() {
           }
         })
 
-        alert('Tema atualizado com sucesso')
+        ToTstAoastaAlerta('Tema atualizado com sucesso')
         retornar()
 
       } catch (error: any) {
         if (error.toString().includes('401')) {
-          alert('O token expirou, favor logar novamente')
+          ToTstAoastaAlerta('O token expirou, favor logar novamente')
           handleLogout()
         } else {
-          alert('Erro ao atualizar o Tema')
+          ToTstAoastaAlerta('Erro ao atualizar o Tema')
         }
 
       }
@@ -69,14 +69,14 @@ function FormularioTema() {
           }
         })
 
-        alert('Tema cadastrado com sucesso')
+        ToTstAoastaAlerta('Tema cadastrado com sucesso')
 
       } catch (error: any) {
         if (error.toString().includes('401')) {
-          alert('O token expirou, favor logar novamente')
+          ToTstAoastaAlerta('O token expirou, favor logar novamente')
           handleLogout()
         } else {
-          alert('Erro ao cadastrado o Tema')
+          ToTstAoastaAlerta('Erro ao cadastrado o Tema')
         }
       }
     }
@@ -90,7 +90,7 @@ function FormularioTema() {
 
   useEffect(() => {
     if (token === '') {
-      alert('Você precisa estar logado');
+      ToTstAoastaAlerta('Você precisa estar logado');
       navigate('/login');
     }
   }, [token]);
