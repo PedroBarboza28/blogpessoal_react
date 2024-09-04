@@ -5,6 +5,7 @@ import { AuthContext } from "../../../contexts/AuthContext";
 import Postagem from "../../../models/Postagem";
 import { buscar } from "../../../service/Service";
 import { Dna } from "react-loader-spinner";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function ListaPostagens() {
 
